@@ -1,0 +1,17 @@
+﻿using AsyncMediator;
+
+namespace Application02.UseCases.Demo2;
+
+internal class Demo2CommandHandle : CommandBase<Demo2Command>
+{
+    public Demo2CommandHandle(IMediator mediator)
+        : base(mediator)
+    {
+    }
+
+    protected override void DoHandle(Demo2Command command)
+    {
+        Demo2Event demo2Event = new();
+        Mediator.DeferEvent(demo2Event);
+    }
+}
