@@ -8,7 +8,7 @@ using BenchmarkDotNet.Attributes;
 namespace Benchmarks;
 
 [SimpleJob()]
-[IterationCount(10)]
+[IterationCount(100)]
 public class DemoBenchmarks
 {
     private IContainer container;

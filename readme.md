@@ -72,3 +72,12 @@ Then, I created three command handlers (in three projects) which execute the sam
 - Raise a domain event handled by 10 different vent handlers.
 - Raise three domain events, each one handled by their own event handler.
 
+## Results
+
+The detailed results can be found in the [/benchmark-results](/benchmark-results) directory.
+
+| Method               |        Mean |     Error |      StdDev |
+| -------------------- | ----------: | --------: | ----------: |
+| SimpleClasses        |    993.1 ns |  32.69 ns |    93.80 ns |
+| OneDomainEvent       |  7,674.3 ns | 156.92 ns |   442.59 ns |
+| MultipleDomainEvents | 16,662.1 ns | 423.71 ns | 1,242.67 ns |

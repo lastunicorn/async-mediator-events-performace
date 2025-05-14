@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Exporters.Json;
 using BenchmarkDotNet.Running;
 using System.Reflection;
 
@@ -12,7 +13,8 @@ namespace Benchmarks.Cli
             BenchmarkSwitcher benchmarkSwitcher = BenchmarkSwitcher.FromAssembly(benchmarksAssembly);
             IConfig config = ManualConfig
                 .Create(DefaultConfig.Instance)
-                .WithOptions(ConfigOptions.DisableOptimizationsValidator);
+                .WithOptions(ConfigOptions.DisableOptimizationsValidator)
+                .AddExporter(JsonExporter.Full);
 
             _ = benchmarkSwitcher.Run(args, config);
         }
