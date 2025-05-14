@@ -9,7 +9,6 @@ namespace Benchmarks;
 
 [SimpleJob()]
 [IterationCount(10)]
-//[InvocationCount(1000)]
 public class DemoBenchmarks
 {
     private IContainer container;

@@ -1,5 +1,6 @@
 ﻿using Application01.MyClasses;
 using AsyncMediator;
+using Infrastructure;
 
 namespace Application01.UseCases.Demo1;
 
@@ -10,7 +11,7 @@ internal class Demo1CommandHandler : CommandBase<Demo1Command>
     {
     }
 
-    protected override void DoHandle(Demo1Command command)
+    protected override Task<ICommandWorkflowResult> DoHandle(Demo1Command command)
     {
         MyClass01 myClass01 = new();
         myClass01.DoSomething();
@@ -41,5 +42,7 @@ internal class Demo1CommandHandler : CommandBase<Demo1Command>
 
         MyClass10 myClass10 = new();
         myClass10.DoSomething();
+
+        return Task.FromResult<ICommandWorkflowResult>(CommandWorkflowResult.Ok());
     }
 }

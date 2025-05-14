@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarks.Cli", "Benchmark
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application03", "Application03\Application03.csproj", "{FBAFCEA8-F8E7-4866-BDF1-0D23F52B72EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{361E9A5A-5B4E-463B-816F-58491443C82E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FBAFCEA8-F8E7-4866-BDF1-0D23F52B72EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBAFCEA8-F8E7-4866-BDF1-0D23F52B72EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBAFCEA8-F8E7-4866-BDF1-0D23F52B72EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361E9A5A-5B4E-463B-816F-58491443C82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361E9A5A-5B4E-463B-816F-58491443C82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361E9A5A-5B4E-463B-816F-58491443C82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361E9A5A-5B4E-463B-816F-58491443C82E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

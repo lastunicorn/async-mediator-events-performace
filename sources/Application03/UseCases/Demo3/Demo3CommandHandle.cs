@@ -1,4 +1,5 @@
 ﻿using AsyncMediator;
+using Infrastructure;
 
 namespace Application03.UseCases.Demo3;
 
@@ -9,7 +10,7 @@ internal class Demo3CommandHandle : CommandBase<Demo3Command>
     {
     }
 
-    protected override void DoHandle(Demo3Command command)
+    protected override Task<ICommandWorkflowResult> DoHandle(Demo3Command command)
     {
         Demo3Event01 demo2Event = new();
         Mediator.DeferEvent(demo2Event);
@@ -40,5 +41,7 @@ internal class Demo3CommandHandle : CommandBase<Demo3Command>
 
         Demo3Event10 demo3Event10 = new();
         Mediator.DeferEvent(demo3Event10);
+
+        return Task.FromResult<ICommandWorkflowResult>(CommandWorkflowResult.Ok());
     }
 }

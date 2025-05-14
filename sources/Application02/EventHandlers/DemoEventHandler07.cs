@@ -1,5 +1,4 @@
-﻿using Application02;
-using Application02.UseCases.Demo2;
+﻿using Application02.UseCases.Demo2;
 using AsyncMediator;
 
 namespace Application02.EventHandlers;
