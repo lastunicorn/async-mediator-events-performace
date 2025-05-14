@@ -1,9 +1,10 @@
 ﻿using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Exporters.Json;
 using BenchmarkDotNet.Running;
+using DustInTheWind.DomainEventsPerformance.Benchmarks;
 using System.Reflection;
 
-namespace Benchmarks.Cli
+namespace DustInTheWind.DomainEventsPerformance.Benchmarks.Cli
 {
     public static class Program
     {

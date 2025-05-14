@@ -1,7 +1,7 @@
-﻿using Application03.UseCases.Demo3;
-using AsyncMediator;
+﻿using AsyncMediator;
+using DustInTheWind.DomainEventsPerformance.Application03.UseCases.Demo3;
 
-namespace Application03.EventHandlers;
+namespace DustInTheWind.DomainEventsPerformance.Application03.EventHandlers;
 
 internal class DemoEventHandler04 : IEventHandler<Demo3Event01>
 {

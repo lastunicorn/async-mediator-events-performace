@@ -1,11 +1,11 @@
-﻿using Application01.UseCases.Demo1;
-using Application02.UseCases.Demo2;
-using Application03.UseCases.Demo3;
-using AsyncMediator;
+﻿using AsyncMediator;
 using Autofac;
 using BenchmarkDotNet.Attributes;
+using DustInTheWind.DomainEventsPerformance.Application01.UseCases.Demo1;
+using DustInTheWind.DomainEventsPerformance.Application02.UseCases.Demo2;
+using DustInTheWind.DomainEventsPerformance.Application03.UseCases.Demo3;
 
-namespace Benchmarks;
+namespace DustInTheWind.DomainEventsPerformance.Benchmarks;
 
 [SimpleJob()]
 [IterationCount(100)]

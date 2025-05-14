@@ -1,6 +1,6 @@
 ﻿using AsyncMediator;
 
-namespace Infrastructure;
+namespace DustInTheWind.DomainEventsPerformance.Infrastructure;
 
 public abstract class CommandBase<TCommand> : ICommandHandler<TCommand>
     where TCommand : ICommand

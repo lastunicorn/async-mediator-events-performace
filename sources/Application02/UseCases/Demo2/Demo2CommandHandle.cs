@@ -1,7 +1,7 @@
 ﻿using AsyncMediator;
-using Infrastructure;
+using DustInTheWind.DomainEventsPerformance.Infrastructure;
 
-namespace Application02.UseCases.Demo2;
+namespace DustInTheWind.DomainEventsPerformance.Application02.UseCases.Demo2;
 
 internal class Demo2CommandHandle : CommandBase<Demo2Command>
 {

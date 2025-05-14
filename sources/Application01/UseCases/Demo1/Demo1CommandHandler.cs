@@ -1,8 +1,8 @@
-﻿using Application01.MyClasses;
-using AsyncMediator;
-using Infrastructure;
+﻿using AsyncMediator;
+using DustInTheWind.DomainEventsPerformance.Application01.MyClasses;
+using DustInTheWind.DomainEventsPerformance.Infrastructure;
 
-namespace Application01.UseCases.Demo1;
+namespace DustInTheWind.DomainEventsPerformance.Application01.UseCases.Demo1;
 
 internal class Demo1CommandHandler : CommandBase<Demo1Command>
 {

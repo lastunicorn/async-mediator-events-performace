@@ -1,4 +1,4 @@
-﻿namespace Application01;
+﻿namespace DustInTheWind.DomainEventsPerformance.Application01;
 
 public static class StaticLog
 {

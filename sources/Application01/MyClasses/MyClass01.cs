@@ -1,4 +1,6 @@
-﻿namespace Application01.MyClasses;
+﻿using DustInTheWind.DomainEventsPerformance.Application01;
+
+namespace DustInTheWind.DomainEventsPerformance.Application01.MyClasses;
 
 public class MyClass01
 {

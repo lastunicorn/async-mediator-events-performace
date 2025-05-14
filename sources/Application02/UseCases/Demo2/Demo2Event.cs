@@ -1,6 +1,6 @@
 ﻿using AsyncMediator;
 
-namespace Application02.UseCases.Demo2;
+namespace DustInTheWind.DomainEventsPerformance.Application02.UseCases.Demo2;
 
 internal class Demo2Event : IDomainEvent
 {
